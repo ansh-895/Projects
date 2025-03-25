@@ -1,0 +1,113 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a3825; /* Matches client & freelancer pages */
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-links li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  color: white;
+}
+
+.nav-links li:hover,
+.nav-links .active {
+  color: #ffcc99;
+}
+
+/* Profile Icon */
+.profile-container {
+  position: relative;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 120px;
+  display: none;
+  flex-direction: column;
+}
+
+.profile-container:hover .profile-dropdown {
+  display: flex;
+}
+
+.profile-dropdown a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #5c4033;
+}
+
+.dark-mode .nav-links li {
+  color: white;
+}
+
+.dark-mode .profile-dropdown {
+  background-color: #333;
+}
+
+.dark-mode .profile-dropdown a {
+  color: white;
+}
+
+/* Toggle Button */
+.toggle-container {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}

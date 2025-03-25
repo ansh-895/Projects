@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5DEB3;  /* Beige Background */
+    color: #5A3E2B; /* Dark Brown Text */
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #3E2723;  /* Deep Brown */
+    color: #E5C7A9; /* Light Beige */
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #5A3E2B; /* Dark Brown */
+}
+
+.dark-mode #dark-mode-toggle {
+    color: #E5C7A9; /* Light Beige */
+}
+
+/* Form Styling */
+form {
+    background: #FFF8E1; /* Soft Beige */
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode form {
+    background: #5A3E2B; /* Dark Brown */
+    color: #E5C7A9; /* Light Beige */
+}
+
+/* Headings */
+h2 {
+    color: #5A3E2B; /* Dark Brown */
+    margin-bottom: 20px;
+}
+
+.dark-mode h2 {
+    color: #E5C7A9; /* Light Beige */
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #8B5E3C; /* Medium Brown */
+    border-radius: 5px;
+    background: #FFF5E1; /* Light Beige */
+    color: #5A3E2B; /* Dark Brown */
+}
+
+.dark-mode input {
+    background: #3E2723; /* Deep Brown */
+    color: #E5C7A9; /* Light Beige */
+    border: 1px solid #E5C7A9; /* Light Beige */
+}
+
+/* Button Styling */
+button {
+    background-color: #8B5E3C; /* Medium Brown */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5A3E2B; /* Dark Brown */
+}

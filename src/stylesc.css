@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ebe0; /* Beige */
+    color: #5c4033; /* Dark Brown */
+    text-align: center;
+    padding: 50px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #3e2723; /* Dark Brown */
+    color: #f5ebe0; /* Beige */
+}
+
+/* Container Styling */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dark Mode - Container */
+.dark-mode .container {
+    background: rgba(62, 39, 35, 0.9); /* Dark Brown with opacity */
+    color: #f5ebe0; /* Beige */
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels */
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%; /* Full width inside the container */
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #5c4033; /* Dark Brown */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Dark Mode - Input Fields */
+.dark-mode input {
+    background-color: #5c4033; /* Darker background */
+    color: #f5ebe0; /* Light text */
+    border: 1px solid #f5ebe0; /* Light border */
+}
+
+/* Button Styling */
+button {
+    width: 100%; /* Full width button */
+    background-color: #5c4033;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3e2723;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    position: absolute;
+    top: 15px;
+    left: 700px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
